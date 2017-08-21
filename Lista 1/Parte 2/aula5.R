@@ -30,6 +30,9 @@ hist4_2 <- hist(exp4[,2], plot=F)
 hist4_2$counts <- hist4_2$counts/sum(hist4_2$counts)
 plot(hist4_2)
 
+persp(z=table(exp2), theta = 60)
+persp(z=table(exp4), theta = 60)
+
 ## Exercicio 4
 
 prob2 <- table(exp2[,1], exp2[,2])/length(exp2[,1])
